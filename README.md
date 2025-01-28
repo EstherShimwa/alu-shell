@@ -1,1 +1,1 @@
-ths is my first shell projectitoooo
+ths is my first shell project
