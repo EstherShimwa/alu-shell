@@ -1,2 +1,10 @@
 #!/bin/bash
-awk 'NR==3' iacta
+count=0
+while IFS= read -r line
+do
+  count=$((count + 1))
+  if [ "$count" -eq 3 ]; then
+    echo "$line"
+    break
+  fi
+done < iacta
